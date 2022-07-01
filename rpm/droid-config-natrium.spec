@@ -7,6 +7,8 @@
 %define vendor_pretty Xiaomi
 %define device_pretty Mi 5s Plus
 
+%define android_version_major 10
+
 # Community HW adaptations need this
 %define community_adaptation 1
 
@@ -26,3 +28,6 @@
 # sign, otherwise they will remain defined! E.g.:
 #define some_macro "I'll not be defined because I don't have % in front"
 
+# Device-specific ofono configuration
+Provides: ofono-configs
+Obsoletes: ofono-configs-mer
